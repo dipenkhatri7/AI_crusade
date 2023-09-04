@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vac/views/commentary.dart';
 import 'package:vac/views/pages/home.dart';
 import 'package:vac/views/pages/home/home_page.dart';
 import 'package:vac/views/pages/settings/settings.dart';
@@ -22,6 +23,8 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
       return MaterialPageRoute(
         builder: (context) => const HomePage(),
       );
+    case '/commentary':
+      return MaterialPageRoute(builder: (context) => const Commentary());
     default:
       return MaterialPageRoute(
         builder: (context) => const Home(),
